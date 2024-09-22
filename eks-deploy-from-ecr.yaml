@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-python-app-deployment
+  name: my-docker-repo0009
 spec:
   replicas: 5
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-python-app
-        image: 905418159172.dkr.ecr.us-east-1.amazonaws.com/my-python-repo
+        image: 905418159172.dkr.ecr.us-east-1.amazonaws.com/my-docker-repo0009
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
